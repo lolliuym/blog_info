@@ -1,6 +1,85 @@
-@import 'fonts';
+@import "fonts";
+
+@import "~bootstrap/scss/bootstrap";
 
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   background-color: cornflowerblue;
+  background: #d6c774;
+}
+.blog {
+  overflow: hidden;
+  margin: 100px auto;
+  width: 800px;
+  border: 0;
+  &__row {
+    margin: 0;
+  }
+
+  &__col-info {
+    padding: 20px;
+    border-radius: 0;
+    background: #4c4641;
+    color: #fff;
+  }
+  &__title {
+    margin-bottom: auto;
+  }
+  &__start {
+    margin-bottom: auto;
+    background: none;
+    border: 0;
+    &__topic {
+      font-size: 20px;
+    }
+
+    &__last-line {
+      width: 50px;
+      height: 4px;
+      background: #d9831e;
+    }
+  }
+
+  &__col-content {
+    padding: 0;
+    overflow: hidden;
+  }
+
+  &__text {
+    margin: 40px 30px;
+    padding: 0;
+    &-blog__paragraph:first-child:first-letter {
+      font-size: 26px;
+      font-weight: 700;
+    }
+  }
+}
+.author-blog {
+  margin: 0;
+  padding: 20px 30px;
+  background: none;
+  border: 0;
+  border-radius: 0;
+  &__img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  }
+  &__name {
+    margin: 5px 15px;
+  }
+}
+
+.link-actions__comment,
+.link-actions__notification,
+.link-actions__ellipsis {
+  margin: 0 5px;
+}
+
+.link-actions__comment {
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
 }
